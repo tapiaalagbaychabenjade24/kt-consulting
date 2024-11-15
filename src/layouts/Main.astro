@@ -1,0 +1,42 @@
+---
+// Fonts
+import '@fontsource/lato';
+
+// Components
+import Header from '../Components/Header.astro';
+import Footer from '../Components/Footer.astro';
+---
+
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='generator' content={Astro.generator} />
+
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+
+		<title>
+			KT Consulting | Excellence in Program Management & Solutions
+		</title>
+	</head>
+
+	<body>
+		<Header />
+
+		<slot />
+
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	body {
+		font-family: 'Lato', sans-serif;
+
+		@apply text-charcoal;
+	}
+
+	.min-max {
+		@apply w-11/12 max-w-6xl mx-auto;
+	}
+</style>

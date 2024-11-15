@@ -1,16 +1,358 @@
 ---
+import { Image } from 'astro:assets';
 
+// Layouts
+import Main from '../layouts/Main.astro';
+
+// Assets
+import AboutHandshake from '../assets/about-handshake.png';
+import MeetingStatistics from '../assets/meeting-statistics.png';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Main>
+	<section class='flex items-center bg-hero-pattern h-120'>
+		<div class='min-max'>
+			<div class='space-y-3 max-w-2xl mb-6'>
+				<h1 class='text-white text-2.5xl max-[550px]:text-2xl font-bold'>
+					Trusted Expertise in Federal Program Management and Cost-Saving
+					Solutions
+				</h1>
+
+				<p class='text-white text-lg max-[450px]:text-base'>
+					KTC brings over 13 years of expertise in Program Management,
+					Engineering, and Consulting Services, trusted by federal clients
+					across defense and civilian sectors. With a proven track record
+					of reducing costs and boosting efficiency, KTC delivers
+					consistent, high-quality results tailored to meet client needs.
+				</p>
+			</div>
+
+			<div class='flex max-[550px]:flex-col gap-2'>
+				<div>
+					<a
+						href='/'
+						class='block font-medium max-[550px]:text-center text-white bg-leaf py-3 px-6'
+						>Explore our Services</a
+					>
+				</div>
+
+				<div>
+					<a
+						href='/'
+						class='block font-medium max-[550px]:text-center bg-white py-3 px-6'
+						>Contact Us for a Free Consultation</a
+					>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class='flex max-[1145px]:flex-col items-center gap-10 my-12 min-max'>
+			<div class='h-128 max-[560px]:h-full w-128 max-[560px]:w-full'>
+				<div class='h-128 max-[560px]:h-full w-128 max-[560px]:w-full'>
+					<Image
+						src={AboutHandshake}
+						alt='Business Handshake'
+						height={1000}
+						width={1000}
+						class='h-full w-full'
+					/>
+				</div>
+			</div>
+
+			<div class='max-[1145px]:max-w-128'>
+				<h2 class='font-bold text-leaf mb-3'>ABOUT KT CONSULTING</h2>
+
+				<h3 class='text-2xl font-bold mb-4'>
+					Your Trusted Partner for Excellence in Program Management and
+					Consulting Services
+				</h3>
+
+				<p class='mb-4'>
+					KTC is a rising leader in Program Management, Management
+					Consulting, Engineering, and Scientific Services. We’re known for
+					our commitment to exceeding client expectations and delivering
+					true business value through customized, flexible solutions. With
+					a rapidly expanding list of clients and successful projects, KTC
+					is dedicated to supporting organizations in achieving their goals
+					through reliable and innovative consulting.
+				</p>
+
+				<ul class='list-disc list-inside leading-7 mb-6'>
+					<li>
+						Trusted Expertise: A proven track record of success across
+						industries.
+					</li>
+
+					<li>
+						Tailored Solutions: Flexible consulting designed to meet your
+						specific needs.
+					</li>
+
+					<li>
+						Growing Network: Join the many satisfied clients who trust
+						KTC.
+					</li>
+				</ul>
+
+				<a
+					href='/'
+					class='block font-medium text-white bg-leaf max-w-max py-3 px-6'
+					>Start Your Success Journey with Us</a
+				>
+			</div>
+		</div>
+	</section>
+
+	<section class='bg-charcoal py-12'>
+		<div class='min-max'>
+			<h2 class='text-leaf font-bold mb-3'>KT CONSULING SERVICES</h2>
+
+			<h3 class='text-white font-bold text-2xl max-w-2xl mb-12'>
+				KTC offers comprehensive solutions across a wide range of
+				disciplines, designed to deliver results and exceed expectations.
+			</h3>
+
+			<div>
+				<a
+					href='/'
+					class='group flex max-[600px]:flex-col-reverse justify-between max-[950px]:gap-5 border-y border-y-white p-5 hover:bg-[#333333]'
+				>
+					<div class='flex max-[950px]:flex-col max-[950px]:gap-2'>
+						<h4 class='text-lg text-white font-bold w-72'>
+							PROGRAM MANAGEMENT
+						</h4>
+
+						<p class='text-white max-w-md'>
+							Strategic oversight from start to finish, ensuring timely
+							and efficient project delivery.
+						</p>
+					</div>
+
+					<div
+						class='flex justify-center items-center border rounded-full w-12 h-12 group-hover:bg-leaf group-hover:border-leaf transition-transform ease-linear duration-200 transform group-hover:-rotate-45'
+					>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke-width='1.5'
+							stroke='currentColor'
+							class='size-6 text-white'
+						>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3'></path>
+						</svg>
+					</div>
+				</a>
+
+				<a
+					href='/'
+					class='group flex max-[600px]:flex-col-reverse justify-between max-[950px]:gap-5 border-y border-y-white p-5 hover:bg-[#333333]'
+				>
+					<div class='flex max-[950px]:flex-col max-[950px]:gap-2'>
+						<h4 class='text-lg text-white font-bold w-72'>
+							MANAGEMENT CONSULTING
+						</h4>
+
+						<p class='text-white max-w-md'>
+							Providing expert insights to help optimize processes and
+							achieve business goals.
+						</p>
+					</div>
+
+					<div
+						class='flex justify-center items-center border rounded-full w-12 h-12 group-hover:bg-leaf group-hover:border-leaf transition-transform ease-linear duration-200 transform group-hover:-rotate-45'
+					>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke-width='1.5'
+							stroke='currentColor'
+							class='size-6 text-white'
+						>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3'></path>
+						</svg>
+					</div>
+				</a>
+
+				<a
+					href='/'
+					class='group flex max-[600px]:flex-col-reverse justify-between max-[950px]:gap-5 border-y border-y-white p-5 hover:bg-[#333333]'
+				>
+					<div class='flex max-[950px]:flex-col max-[950px]:gap-2'>
+						<h4 class='text-lg text-white font-bold w-72'>
+							ENGINEERING SERVICES
+						</h4>
+
+						<p class='text-white max-w-md'>
+							Delivering technical expertise to solve complex engineering
+							challenges with precision.
+						</p>
+					</div>
+
+					<div
+						class='flex justify-center items-center border rounded-full w-12 h-12 group-hover:bg-leaf group-hover:border-leaf transition-transform ease-linear duration-200 transform group-hover:-rotate-45'
+					>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke-width='1.5'
+							stroke='currentColor'
+							class='size-6 text-white'
+						>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3'></path>
+						</svg>
+					</div>
+				</a>
+
+				<a
+					href='/'
+					class='group flex max-[600px]:flex-col-reverse justify-between max-[950px]:gap-5 border-y border-y-white p-5 hover:bg-[#333333]'
+				>
+					<div class='flex max-[950px]:flex-col max-[950px]:gap-2'>
+						<h4 class='text-lg text-white font-bold w-72'>
+							SCIENTIFIC SERVICES
+						</h4>
+
+						<p class='text-white max-w-md'>
+							Research-driven solutions that add value to each client
+							engagement.
+						</p>
+					</div>
+
+					<div
+						class='flex justify-center items-center border rounded-full w-12 h-12 group-hover:bg-leaf group-hover:border-leaf transition-transform ease-linear duration-200 transform group-hover:-rotate-45'
+					>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke-width='1.5'
+							stroke='currentColor'
+							class='size-6 text-white'
+						>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3'></path>
+						</svg>
+					</div>
+				</a>
+
+				<a
+					href='/'
+					class='group flex max-[600px]:flex-col-reverse justify-between max-[950px]:gap-5 border-y border-y-white p-5 hover:bg-[#333333]'
+				>
+					<div class='flex max-[950px]:flex-col max-[950px]:gap-2'>
+						<h4 class='text-lg text-white font-bold w-72'>
+							QUALITY MANAGEMENT
+						</h4>
+
+						<p class='text-white max-w-md'>
+							Maintaining high standards through rigorous quality
+							assurance and control measures.
+						</p>
+					</div>
+
+					<div
+						class='flex justify-center items-center border rounded-full w-12 h-12 group-hover:bg-leaf group-hover:border-leaf transition-transform ease-linear duration-200 transform group-hover:-rotate-45'
+					>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke-width='1.5'
+							stroke='currentColor'
+							class='size-6 text-white'
+						>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3'></path>
+						</svg>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class='flex max-[1145px]:flex-col items-center gap-10 my-12 min-max'>
+			<div class='max-[1145px]:max-w-128'>
+				<h2 class='font-bold text-leaf mb-3'>
+					WHY KT CONSULTING IS THE RIGHT CHOICE
+				</h2>
+
+				<ul class='list-disc list-inside leading-7 mb-6'>
+					<li>
+						<span class='font-semibold'>Proven Results</span>: Over the
+						past 10 years, we've helped clients save $10 Million in
+						Operating Costs and increase $7.5 Million in Mission Support
+						Capacity.
+					</li>
+
+					<li>
+						<span class='font-semibold'>Tailored Solutions</span>: We
+						provide customized strategies that fit your unique needs and
+						goals.
+					</li>
+
+					<li>
+						<span class='font-semibold'>Expertise Across Industries</span
+						>: Our team has the experience to handle projects in Program
+						Management, Consulting, Engineering, Scientific Services, and
+						more.
+					</li>
+
+					<li>
+						<span class='font-semibold'>Commitment to Quality</span>: We
+						deliver reliable, high-quality solutions that drive results.
+					</li>
+
+					<li>
+						<span class='font-semibold'>Client-Focused</span>: Your
+						success is our priority. We work closely with you to ensure
+						your goals are met.
+					</li>
+				</ul>
+
+				<a
+					href='/'
+					class='block font-medium text-white bg-leaf max-w-max py-3 px-6'
+					>Start Your Success Journey with Us</a
+				>
+			</div>
+
+			<div class='h-128 max-[560px]:h-full w-128 max-[560px]:w-full'>
+				<div class='h-128 max-[560px]:h-full w-128 max-[560px]:w-full'>
+					<Image
+						src={MeetingStatistics}
+						alt='Meeting Statistics'
+						height={1000}
+						width={1000}
+						class='h-full w-full'
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+</Main>
+
+<style>
+	ul li {
+		text-indent: -22px;
+		padding-left: 22px;
+	}
+</style>
